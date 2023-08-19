@@ -1,0 +1,531 @@
+/* font-link */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+p,
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  cursor: default;
+}
+img {
+  pointer-events: none;
+}
+::selection {
+  background-color: #929ecc;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 2;
+  border-bottom: 1px solid #eee;
+}
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #37447e;
+}
+
+header {
+  background-color: transparent;
+  height: 60px;
+  position: relative;
+  transition: 0.5s;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+header nav .links ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav .links ul li {
+  margin: 0 0 0 10px;
+}
+
+header nav .links ul li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: #505f98;
+  font-size: 17px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+header nav .links ul li a:hover {
+  color: #101401;
+}
+
+header nav .logo {
+  transform: translate(-30px, 0);
+}
+
+header nav p {
+  text-align: center;
+  margin: 0 50px;
+  font-family: "Roboto", sans-serif;
+  color: #37447e;
+  font-weight: 900;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+header nav button {
+  height: 26px;
+  width: 160px;
+  background-color: #111b47;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 5px;
+  transition: 0.5s;
+  border: 0;
+  text-align: center;
+}
+
+header nav button:hover {
+  background-color: #505f98;
+  color: #fff;
+}
+
+/* header finish */
+
+.home {
+  width: 100%;
+  height: 100vh;
+}
+
+.home .continer {
+  display: flex;
+}
+
+.home .continer .links {
+  width: 40%;
+  transform: translate(0%, calc(50vh - 300px));
+  padding: 0 0 0 10%;
+}
+
+.home .continer .links h1 {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 66px;
+  width: 539px;
+  letter-spacing: 1px;
+  color: #091133;
+}
+
+.home .continer .links p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: #505f98;
+  width: 100%;
+}
+
+.home .continer .links .btns {
+  margin-top: 40px;
+}
+
+.home .continer .links .btns button {
+  margin-right: 10px;
+  height: 26px;
+  width: 160px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 5px;
+  transition: 0.5s;
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.home .continer .links .btns .btn1 {
+  color: #fff;
+  background-color: #111b47;
+  border: 2px solid #111b47;
+}
+
+.home .continer .links .btns .btn2 {
+  color: #111b47;
+  background-color: transparent;
+  border: 2px solid #101401;
+}
+
+.home .continer .links .btns .btn1:hover {
+  background-color: #fff;
+  color: #111b47;
+  border: 2px solid #101401;
+}
+
+.home .continer .links .btns .btn2:hover {
+  color: #fff;
+  background-color: #111b47;
+}
+
+.home .continer .img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.home .continer .img img {
+  height: calc(100vh - 5px);
+}
+
+/* home-finish */
+
+/* about-start */
+
+.about {
+  height: 50vh;
+  width: 100%;
+  padding-bottom: 70px;
+  margin-bottom: 100px;
+}
+
+.about .continer {
+  display: flex;
+  padding: 30px 65px;
+  margin: 50px 0 0 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .continer .img {
+  height: 524.313px;
+  margin-left: 50px;
+}
+
+.about .continer .text {
+  width: 50%;
+}
+
+.about .continer .text h3 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  color: #091133;
+  width: inherit;
+}
+
+.about .continer .text p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #6f7cb2;
+  width: inherit;
+}
+
+.about .continer .text .cards {
+  display: flex;
+}
+
+.about .continer .text .cards .card {
+  margin-right: 10px;
+  border-radius: 25px;
+  padding: 10px 25px 10px 10px;
+  transition: 0.5s;
+}
+
+.about .continer .text .cards .card img {
+  pointer-events: none;
+}
+
+.about .continer .text .cards .card h1 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  pointer-events: none;
+  color: #091133;
+}
+
+.about .continer .text .cards .card p {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  pointer-events: none;
+  color: #5d6970;
+}
+
+.about .continer .text .cards :hover {
+  background-color: #eee;
+}
+/* about-finish */
+
+.serv {
+  height: 150vh;
+  width: 100%;
+}
+
+.serv .continer {
+  padding: 0 50px;
+  width: calc(100% - 100px);
+}
+.serv .continer .card {
+  display: flex;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 0 60px 40px;
+  transition: 0.5s;
+}
+.serv .continer .card:hover {
+  transform: translate(0px, -20px);
+}
+.serv .continer .card .img {
+  margin-right: 70px;
+}
+.serv .continer .card .img img {
+  width: 100%;
+}
+.serv .continer .card .text {
+  width: inherit;
+}
+.serv .continer .card .text h3 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  color: #091133;
+  width: inherit;
+}
+
+.serv .continer .card .text p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #6f7cb2;
+  width: 500px;
+}
+.serv .continer .card button {
+  height: 26px;
+  width: 160px;
+  background-color: #111b47;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  border-radius: 5px;
+  transition: 0.5s;
+  border: 0;
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.serv .continer .card button:hover {
+  background-color: #505f98;
+  color: #fff;
+}
+
+.contact {
+  margin-top: 10vh;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  padding-bottom: 50px;
+  background: url(./img/Rectangle.png) no-repeat;
+  background-size: cover;
+  margin-bottom: 100px;
+  transform: translate(0, 200px);
+}
+
+/* .contact .svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  height: 852px;
+} */
+.contact .continer {
+  transform: translate(0, 25vh);
+  width: 600px;
+  margin: auto;
+}
+.contact .continer .content h1 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  color: #091133;
+}
+.contact .continer .content p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #6f7cb2;
+  margin-bottom: 10px;
+}
+.contact .continer .content .price {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 66px; /* 132% */
+  letter-spacing: 1px;
+  padding: 20px 20px 0 20px;
+  color: #222f65;
+  margin-bottom: 0;
+}
+.contact .continer .content .u {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  color: #37447e;
+  padding: 0 20px 0 20px;
+  margin-top: -10px;
+  margin-bottom: 50px;
+}
+
+.contact .continer .content .s {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #5d6970;
+  margin-bottom: -25px;
+  margin-top: 100px;
+}
+
+.contact .continer .content button {
+  height: 26px;
+  width: 160px;
+  background-color: #111b47;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  transition: 0.5s;
+  border: 0;
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 50px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.contact .continer .content button:hover {
+  background-color: #505f98;
+  color: #fff;
+}
+/* footer- */
+footer {
+  background-color: #e7ecff;
+  margin-top: -18px;
+  padding: 50px 100px;
+}
+footer .continer .text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .continer .text p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: #939ea4;
+}
+footer .continer .text .logo p {
+  font-family: "Roboto", sans-serif;
+  color: #37447e;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 38px;
+  cursor: pointer;
+}
+footer .continer .text button {
+  height: 26px;
+  width: 160px;
+  background-color: #111b47;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  transition: 0.5s;
+  border: 0;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+footer .continer .text button:hover {
+  background-color: #505f98;
+  color: #fff;
+}
+footer hr {
+  background-color: #cdd1d4;
+  height: 1px;
+  border: 0;
+}
+footer .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+footer .links .pg-links ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 5px;
+  padding: 0;
+}
+
+footer .links .pg-links ul li a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: #929ecc;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  transition: 0.5s;
+  margin-right: 35px;
+}
+
+footer .links .pg-links ul li a:hover {
+  color: #101401;
+}
+footer .links .social-links i {
+  margin-right: 30px;
+  color: #b0b8bc;
+  transition: 0.5s;
+  font-size: 20px;
+}
+footer .links .social-links i:hover {
+  color: #101401;
+  transform: translate(0px, -5px);
+}
